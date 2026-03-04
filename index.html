@@ -64,7 +64,7 @@
       justify-content: center;
     	display: flex;
     	flex-direction: column;
-      min-height: 70px;
+        min-height: 70px;
     	padding: 10px;
     	border-radius: 10px;
     	border: 1px solid rgba(0,0,0,0.04);
@@ -151,8 +151,8 @@
     	flex-direction: column;
 	    margin: 6px;
     	padding: 10px;
-      position: relative;
-      overflow: hidden;
+        position: relative;
+        overflow: hidden;
     	border-radius: 10px;
     	border: 1px solid rgba(255,255,255,0.08);
     	background: rgba(255,255,255,0.08); /* slight glass for sub-box */
@@ -402,7 +402,7 @@
     /* Toggle button */
     #calendarToggle {
       position: absolute;
-      bottom: 16.25 px;
+      bottom: 17 px;
       right: 25px;
       width: 100px;
       height: 35px;
@@ -1224,7 +1224,7 @@
   <script>
     const NAMESPACE='classdash_v5';
     const defaults={
-      total:50,present:50,notes:'',currentThemeIndex:0,
+      total:51,present:51,notes:'',currentThemeIndex:0,
 
       quotes:[
         "Do small things with great love.",
@@ -1414,14 +1414,15 @@
         {roll:42, name:"Muhammad Thayyib", date:"2009-02-13"},
         {roll:43, name:"Nandathmaj A.V.", date:"2009-08-10"},
         {roll:44, name:"Navjyoth Dineshan", date:"2009-09-21"},
-		{roll:45, name:"Rohith Jilesh", date:"2009-03-09"},
-        {roll:46, name:"Roshith P.P.", date:"2009-07-17"},
-        {roll:47, name:"Sivnandh Umesh", date:"2009-10-27"},
-        {roll:48, name:"Siyon Raphael", date:"2009-02-05"},
-        {roll:49, name:"Sreedev K", date:"2009-06-14"},
-        {roll:50, name:"Stalvin George", date:"2009-04-13"},
+		{roll:45, name:"Noel Joseph", date:"2009-11-09"},  
+		{roll:46, name:"Rohith Jilesh", date:"2009-03-09"},
+        {roll:47, name:"Roshith P.P.", date:"2009-07-17"},
+        {roll:48, name:"Sivnandh Umesh", date:"2009-10-27"},
+        {roll:49, name:"Siyon Raphael", date:"2009-02-05"},
+        {roll:50, name:"Sreedev K", date:"2009-06-14"},
+        {roll:51, name:"Stalvin George", date:"2009-04-13"},
         //Class Teacher:
-        {roll:51, name:"Ashly Teacher ", date:"2009-01-24"}
+        {roll:52, name:"Ashly Teacher ", date:"2009-01-24"}
       ]      
     };
 
@@ -1440,7 +1441,7 @@
     function saveData(d){localStorage.setItem(NAMESPACE,JSON.stringify(d));}
 
     function openCountsModal() {
-        const total = 50; // fixed total
+        const total = 51; // fixed total
         const absentInput = prompt('Enter number of students absent:', data.total - data.present);
 
         if (absentInput !== null) {
