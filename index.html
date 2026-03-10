@@ -1224,7 +1224,7 @@
   <script>
     const NAMESPACE='classdash_v5';
     const defaults={
-      total:51,present:51,notes:'',currentThemeIndex:0,
+      total:52,present:52,notes:'',currentThemeIndex:0,
 
       quotes:[
         "Do small things with great love.",
@@ -1421,8 +1421,9 @@
         {roll:49, name:"Siyon Raphael", date:"2009-02-05"},
         {roll:50, name:"Sreedev K", date:"2009-06-14"},
         {roll:51, name:"Stalvin George", date:"2009-04-13"},
+        {roll:52, name:"-", date:"0000-00-00"},
         //Class Teacher:
-        {roll:52, name:"Ashly Teacher ", date:"2009-01-24"}
+        {roll:53, name:"Ashly Teacher ", date:"2009-01-24"}
       ]      
     };
 
@@ -1441,7 +1442,7 @@
     function saveData(d){localStorage.setItem(NAMESPACE,JSON.stringify(d));}
 
     function openCountsModal() {
-        const total = 51; // fixed total
+        const total = 52; // fixed total
         const absentInput = prompt('Enter number of students absent:', data.total - data.present);
 
         if (absentInput !== null) {
