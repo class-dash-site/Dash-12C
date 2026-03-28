@@ -1716,12 +1716,7 @@
           if (i <= 4) {
               const div = document.createElement("div");
               div.className = "period";
-
-              // 🔴 Make periods 0,3,6,9 red
-              if (i % 3 === 0) {
-                  div.classList.add("red-period");
-              }
-
+			  
               div.innerHTML = `
                   <div class="period-num">Period ${i}</div>
                   <div class="period-subject">${p.subject}</div>
@@ -1745,11 +1740,6 @@
           if (i >= 5) {
               const div = document.createElement("div");
               div.className = "period";
-
-              // 🔴 Make periods 0,3,6,9 red
-              if (i % 3 === 0) {
-                  div.classList.add("red-period");
-              }
 
               div.innerHTML = `
                   <div class="period-num">Period ${i}</div>
